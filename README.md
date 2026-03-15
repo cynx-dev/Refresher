@@ -40,7 +40,7 @@ pip install requests colorama
 Run the script:
 
 ```bash
-python refresher.py
+python main.py
 ```
 
 Then enter the URL you want to refresh when prompted.
