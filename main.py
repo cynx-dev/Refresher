@@ -33,7 +33,7 @@ def refresher(url):
          requests.get(url)
          wait = random.randint(1,5)
          time.sleep(wait)
-         print(f"[{Fore.CYAN}+{Fore.RESET}] Refreshed {url}")
+         print(f"[{Fore.CYAN}LOGS{Fore.RESET}] Refreshed {url}")
 
 def main():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -48,7 +48,7 @@ def main():
 
             url = input("Enter the URL to refresh: ")
             if not url.startswith("http://") and not url.startswith("https://"):
-                print("Invalid URL. Please include http:// or https://")
+                print(f"[{Fore.CYAN}INFO{Fore.RESET}] Invalid URL. Please include http:// or https://")
                 continue
 
             else:
